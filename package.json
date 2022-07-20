@@ -1,0 +1,40 @@
+{
+	"name": "gaia-cli",
+	"version": "0.0.1",
+	"description": "gaia框架初始化工具",
+	"main": "./libs/index.js",
+	"scripts": {
+		"build": "rm -rf ./libs && babel src --presets=@babel/preset-env --out-dir libs --copy-files",
+		"test-version": "node ./src/index.js version",
+		"pub": "npm publish --registry=https://registry.npmjs.org"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git@github.com:gaia-hill/gaia-cli.git"
+	},
+	"keywords": [
+		"gaia",
+		"node",
+		"koa",
+		"koa server",
+		"node server",
+		"typescript"
+	],
+	"bin": {
+		"gaia": "./bin/gaia"
+	},
+	"author": "zxl",
+	"license": "ISC",
+	"dependencies": {
+		"@babel/core": "7.15.5",
+		"@babel/polyfill": "7.12.1",
+		"@babel/preset-env": "7.15.6",
+		"chalk": "4.1.2",
+		"ejs": "3.1.6",
+		"fs-extra": "10.0.0",
+		"optimist": "0.6.1"
+	},
+	"devDependencies": {
+		"@babel/cli": "7.15.7"
+	}
+}
