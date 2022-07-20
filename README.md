@@ -1,15 +1,15 @@
-[![npm version](https://img.shields.io/npm/v/gaia-cli.svg?style=flat)](https://www.npmjs.com/package/gaia-cli)
-## gaia-cli
+[![npm version](https://img.shields.io/npm/v/gaia-core-cli.svg?style=flat)](https://www.npmjs.com/package/gaia-core-cli)
+## gaia-core-cli
 gaia项目的初始化工具
 
 
 #### 安装
 
-`npm i gaia-cli -g`
+`npm i gaia-core-cli -g`
 
 或使用npx
 
-`npx gaia-cli init 项目名 [--ts]`
+`npx gaia-core-cli init 项目名 [--ts]`
 
 #### 使用
 

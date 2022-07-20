@@ -1,5 +1,5 @@
 {
-	"name": "gaia-cli",
+	"name": "gaia-core-cli",
 	"version": "0.0.1",
 	"description": "gaia框架初始化工具",
 	"main": "./libs/index.js",
