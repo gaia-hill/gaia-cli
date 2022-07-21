@@ -4,8 +4,9 @@
   "description": "<%= projectName %>",
   "main": "./libs/index.js",
   "scripts": {
-    "start": "NODE_ENV=development NODE_PORT=3005 nodemon -e js,ejs --delay 1  --exec babel-node src/index.js --presets=@babel/preset-env",
-    "build": "rm -rf ./libs && babel src --presets=@babel/preset-env --out-dir libs --copy-files"
+    "start": "nodemon & glint",
+    "build": "rm -rf ./libs && babel src --presets=@babel/preset-env --out-dir libs --copy-files",
+    "fix": "glintfix"
   },
   "repository": {
 		"type": "git",
@@ -21,6 +22,8 @@
     "@babel/core": "^7.15.5",
     "@babel/node": "^7.15.4",
     "@babel/preset-env": "^7.15.6",
+    "gaia-lint": "0.0.3",
+    "kill-port": "^2.0.1",
     "nodemon": "^2.0.12"
   }
 }

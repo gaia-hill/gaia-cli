@@ -1,0 +1,14 @@
+{
+  "signal": "SIGHUP",
+  "env": {
+    "NODE_PORT": 3005,
+    "NODE_ENV": "development"
+  },
+  "events": {
+    "crash": "kill-port --port 3005"
+  },
+  "legacyWatch": true,
+  "delay": 1000,
+  "ext": "js,ejs",
+  "exec": "babel-node src/index.js"
+}

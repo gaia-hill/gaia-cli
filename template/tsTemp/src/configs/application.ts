@@ -2,7 +2,7 @@
 import { Gaia } from 'gaia-core';
 
 // 应用配置
-export default async (nodeEnv: Gaia.NodeEnvType): Promise<Gaia.GaiaConfig> => {
+export default async (): Promise<Gaia.GaiaConfig> => {
   const port = Number(process.env.NODE_PORT || 3005);
   return {
     port,
